@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
+  background-color: #212540;
+  color: #fff;
+  margin: 1px;
+}
+.itens-to-do {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  /* align-content: center; */
+  align-items: center;
+  justify-content: center;
+}
+div.user {
+  display: flex;
+  padding-bottom: 2rem;
+  margin-left: -2px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.filterDate {
+  display: flex;
+  width: 50%;
+  background-color: #383d53;
+  padding: 1rem 0rem;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.labelCalendar {
+  padding-right: 2em;
+}
+.calendar {
+  display: flex;
+  width: 50%;
+  background-color: #383d53;
+  border: none;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.exib-to-to {
+  margin: 2px;
+  margin-right: 4px;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 2rem;
+  color: #1e2553;
+}
+
+div.projects {
+  display: flex;
+  width: 50%;
+  padding: 2rem;
+  flex-direction: column;
+}
+.titleProjects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.projects > div.cardsection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 0px;
+}
+div.projects > div > h2 {
+  padding-right: 1rem;
+}
+div.card {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
+div.card > img {
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+}
+.cardimg {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  background: aqua;
+  padding: 32px 0rem;
+  border-radius: 0.2rem;
+  width: 83px;
+}
+.botoes {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  width: 50%;
+  padding: 1rem 0rem;
+}
+.task {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+  background-color: #383d53;
+  border-radius: 0.4rem;
+  padding: 0.7rem 0rem;
+  align-items: center;
+}
+input {
+  background-color: #5e606b;
+  border: none;
+}
+.cardteste {
+  display: flex;
+  justify-content: center;
+}
+.cardteste:hover {
+  border: solid aqua;
+  border-radius: 1rem;
+  transition-duration: 1s;
+  transform: scale(0.9) translate(10% 10%);
+}
+.cardimg:hover {
+  transition-duration: 1s;
+  background: rgb(69, 126, 126);
+  transform: scale(0.9) translate(10% 10%);
+  border-radius: 0.2rem;
+  padding: auto;
+  margin: 10px;
+}
+
+.containerExib {
+  display: flex;
+  flex-direction: column;
+  width: 90;
+  padding: 40px;
+}
+
+.activity {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.progressItem {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  width: 20%;
+  color: #fff;
+  border-radius: 2px;
+  background-color: #1e2553;
+}
