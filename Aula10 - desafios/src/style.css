@@ -3,10 +3,11 @@ body {
   flex-direction: row;
   justify-content: center;
   width: 100vw;
-  height: 90vh;
+  padding: 1rem 0rem;
   background-color: #212540;
   color: #fff;
-  margin: 1px;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 .itens-to-do {
   display: flex;
@@ -47,7 +48,20 @@ div.user {
   align-items: center;
   justify-content: center;
 }
-
+.buttons{
+  border: none;
+  /* padding: 0.1rem; */
+  background: #5d9756d2;
+  border-radius: 6px;
+  color: rgb(124, 235, 13);
+}
+.delete{
+  padding: 0.5rem;
+  border: none;
+  /* padding: 0.1rem; */
+  background: #f31e1ec2;
+  color: #ffffff
+}
 .exib-to-to {
   margin: 2px;
   margin-right: 4px;
@@ -56,6 +70,7 @@ div.user {
   background-color: #fff;
   border-radius: 2rem;
   color: #1e2553;
+  transition: 0.9s;
 }
 
 div.projects {
@@ -99,6 +114,7 @@ div.card > img {
   font-weight: 900;
   background: aqua;
   padding: 32px 0rem;
+  margin: 2px;
   border-radius: 0.2rem;
   width: 83px;
 }
@@ -133,12 +149,12 @@ input {
   border: solid aqua;
   border-radius: 1rem;
   transition-duration: 1s;
-  transform: scale(0.9) translate(10% 10%);
+  transform: scale(0) translate(10% 10%);
 }
 .cardimg:hover {
   transition-duration: 1s;
   background: rgb(69, 126, 126);
-  transform: scale(0.9) translate(10% 10%);
+  transform: scale(1.2) translate(5%) ;
   border-radius: 0.2rem;
   padding: auto;
   margin: 10px;
@@ -159,12 +175,31 @@ input {
   padding: 1rem;
 }
 
-.progressItem {
+.progressItemSelected {
   display: flex;
   justify-items: center;
   justify-content: center;
-  width: 20%;
-  color: #fff;
+  align-items: center;
+  width: 15%;
+  color: rgb(124, 235, 13);
   border-radius: 2px;
-  background-color: #1e2553;
+  background-color:#5d9756d2;
+}
+
+.activityInProgress{
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 10rem;
+  background-color: white;
+  margin: 1px;
+  padding: 1px;
+  border: solid 1px;
+
+}
+
+.activityInProgress:checked{
+  /* display: none; */
+  background-color: yellow;
+  
 }
